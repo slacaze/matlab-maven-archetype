@@ -1,3 +1,3 @@
-function path = ${artifactId}testroot()
-    path = fileparts( mfilename( 'fullpath' ) );
+function thisPath = ${artifactId}testroot()
+    thisPath = fileparts( mfilename( 'fullpath' ) );
 end
