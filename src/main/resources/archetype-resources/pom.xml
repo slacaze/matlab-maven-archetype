@@ -10,6 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <testsuites.all>${package}.test</testsuites.all>
+        <testsuites.unittest>${package}.test.unittest</testsuites.unittest>
     </properties>
 
     <build>
