@@ -14,6 +14,15 @@
         <testsuites.unittest>${package}.test.unittest</testsuites.unittest>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>fx</groupId>
+            <artifactId>maven</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>mltbx</type>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
