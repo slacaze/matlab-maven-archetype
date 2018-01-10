@@ -9,8 +9,14 @@
     <!-- Descriptions -->
     <name>${name}</name>
     <description>Description</description>
-    <organization>Organization</organization>
-    <developers>Authors</developers>
+    <organization>
+        <name>Organization</name>
+    </organization>
+    <developers>
+        <developer>
+            <name>Authors</name>
+        </developer>
+    </developers>
     <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

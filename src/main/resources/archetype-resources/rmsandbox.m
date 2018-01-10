@@ -1,5 +1,5 @@
 function rmsandbox( varargin )
-    if ~isempty( ver( 'fcam' ) )
+    if ~isempty( ver( 'maven' ) )
         fx.maven.command.rmsandbox( varargin{:} );
     else
         thisPath = fileparts( mfilename( 'fullpath' ) );
