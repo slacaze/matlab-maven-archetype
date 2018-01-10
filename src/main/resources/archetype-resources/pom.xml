@@ -1,29 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <!-- Maven Coordinates -->
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
+    <!-- IMPORTANT: Create an MLTBX -->
     <packaging>mltbx</packaging>
-
+    <!-- Descriptions -->
     <name>${name}</name>
-
+    <description>Description</description>
+    <organization>Organization</organization>
+    <developers>Authors</developers>
+    <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testsuites.all>${package}.test</testsuites.all>
         <testsuites.unittest>${package}.test.unittest</testsuites.unittest>
     </properties>
-
+    <!-- Dependencies -->
     <dependencies>
         <dependency>
             <groupId>fx</groupId>
             <artifactId>maven</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>mltbx</type>
+            <!-- Always have fx:maven as a compile dependency -->
             <scope>compile</scope>
         </dependency>
+        <!-- Add runtime dependencies -->
+        <!-- dependency> <groupId>fx</groupId> <artifactId>myapp</artifactId> <version>1.0-SNAPSHOT</version> <type>mltbx</type> <scope>runtime</scope> </dependency-->
     </dependencies>
-
+    <!-- Always have the fx.maven:matlab-maven-plugin, as it implements all of the goals -->
     <build>
         <plugins>
             <plugin>
@@ -31,8 +38,15 @@
                 <artifactId>matlab-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
                 <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
-
 </project>

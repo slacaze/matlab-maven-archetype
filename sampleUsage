@@ -1,3 +1,0 @@
-mvn archetype:generate -DinteractiveMode=false "-DarchetypeGroupId=fx.fcam" -DarchetypeArtifactId=toolbox-archetype -DgroupId=fx -DartifactId=myapp
-
-cmd /C "rmdir /S /Q myapp"
