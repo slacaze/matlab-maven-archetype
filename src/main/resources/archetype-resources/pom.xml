@@ -29,13 +29,13 @@
         <dependency>
             <groupId>fx.maven</groupId>
             <artifactId>maven</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
             <type>mltbx</type>
             <!-- Always have fx.maven:maven as a compile dependency -->
             <scope>compile</scope>
         </dependency>
         <!-- Add runtime dependencies -->
-        <!-- dependency> <groupId>fx</groupId> <artifactId>myapp</artifactId> <version>1.0-SNAPSHOT</version> <type>mltbx</type> <scope>runtime</scope> </dependency-->
+        <!-- dependency> <groupId>fx</groupId> <artifactId>myapp</artifactId> <version>1.0.0</version> <type>mltbx</type> <scope>runtime</scope> </dependency-->
     </dependencies>
     <!-- Always have the fx.maven:matlab-maven-plugin, as it implements all of the goals -->
     <build>
@@ -43,7 +43,7 @@
             <plugin>
                 <groupId>fx.maven</groupId>
                 <artifactId>matlab-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <extensions>true</extensions>
                 <executions>
                     <execution>
