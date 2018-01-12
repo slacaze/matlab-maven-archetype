@@ -4,7 +4,7 @@ This repository holds a Maven archetype for MATLAB Toolboxes.
 
 ## Coordinates
 
-```xml
+```maven-pom
 <groupId>fx.maven</groupId>
 <artifactId>toolbox-archetype</artifactId>
 <version>1.0-SNAPSHOT</version>
