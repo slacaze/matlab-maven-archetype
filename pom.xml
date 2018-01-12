@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <!-- Maven Coordinates -->
     <groupId>fx.maven</groupId>
     <artifactId>toolbox-archetype</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
-
+    <!-- Descriptions -->
     <name>MATLAB Toolbox Archetype</name>
-
+    <description>A MATLAB Toolbox archetype</description>
+    <organization>
+        <name>MathWorks</name>
+    </organization>
+    <developers>
+        <developer>
+            <name>Sylvain Lacaze</name>
+        </developer>
+    </developers>
+    <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <!-- Build dependencies and configurations -->
     <build>
         <extensions>
             <extension>
@@ -30,7 +39,7 @@
             </plugins>
         </pluginManagement>
     </build>
-
+    <!-- Distribution management -->
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -41,5 +50,4 @@
             <url>http://localhost:8082/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
 </project>

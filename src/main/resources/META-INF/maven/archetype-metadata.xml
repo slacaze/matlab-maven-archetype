@@ -49,7 +49,7 @@
     <requiredProperties>
 
         <requiredProperty key="package">
-            <defaultValue>${groupId}.${artifactId}</defaultValue>
+            <defaultValue>${groupId}</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="name">
