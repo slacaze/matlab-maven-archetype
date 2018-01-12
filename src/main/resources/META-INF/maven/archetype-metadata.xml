@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+    name="toolbox-archetype"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <fileSets>
+
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>__artifactId__.prj</include>
+                <include>addsandbox.m</include>
+                <include>rmsandbox.m</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>code/__artifactId__</directory>
+            <includes>
+                <include>Base.m</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>code/__artifactId__</directory>
+            <includes>
+                <include>__artifactId__root.m</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>test</directory>
+            <includes>
+                <include>+test/+unittest/tBase.m</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>test</directory>
+            <includes>
+                <include>__artifactId__testroot.m</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+
+    <requiredProperties>
+
+        <requiredProperty key="package">
+            <defaultValue>${groupId}</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="name">
+            <defaultValue>${artifactId}</defaultValue>
+        </requiredProperty>
+
+    </requiredProperties>
+
+</archetype-descriptor>
